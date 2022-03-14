@@ -22,7 +22,7 @@ min_epsilon=0.01
 
 were selected.
 
-The following parameters were set by using common values found online, where `fc_layers` specifies two hidden layers with size 64 each as default. This configuration was chosen as a reasonable balance of capturing non-linearity and keeping the network from being overly complex. The dueling network has 256 units.
+The following hyperparameters were set by the network, where `fc_layers` specifies two hidden layers with size 64 each as default. This configuration was chosen as a reasonable balance of capturing non-linearity and keeping the network from being overly complex. The dueling network has 256 units.
 
 ```
 batch_size=64
