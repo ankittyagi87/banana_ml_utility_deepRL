@@ -37,7 +37,7 @@ dueling unit=256
 
 ## Results
 
-The uniform and prioritised experience replay Deep Q agents were each trained once using the default parameters. The network was trained for a total of 800 episodes. The scores of each agent choosen are shown below.
+The uniform and prioritised experience replay of different Deep Q agents were trained using the above hyperparameters. The network was trained for a total of 800 episodes. The scores of each agent choosen are shown below.
 
 ![](results/Scores_of_different_agents.png)
 
