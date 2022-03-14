@@ -28,7 +28,7 @@ The following hyperparameters were set by the network, where `fc_layers` specifi
 batch_size=64
 gamma=0.99
 tau=1e-3
-lr=2X10^-4, 5X10^-4, 10^-3
+lr=2e-4, 5e-4, 1e-3
 update_every=4
 fc_layers=64,64
 dueling unit=256
