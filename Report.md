@@ -2,7 +2,7 @@
 
 ## Overview
 
-Deep reinforcement learning was applied to the Banana-collecting unity environment and variants of [Deep Q](https://arxiv.org/abs/1312.5602.pdf) and [Double Deep Q](https://arxiv.org/pdf/1509.06461.pdf) agents were able to solve the game (defined as an average score above 13.0 over 100 episodes).
+Deep reinforcement learning was applied to the Banana-collecting unity environment and variants of [Deep Q](https://arxiv.org/abs/1312.5602.pdf) and [Double Deep Q](https://arxiv.org/pdf/1509.06461.pdf), [dueling Deep Q](https://arxiv.org/abs/1511.06581v3) agents were able to solve the game (defined as an average score above 13.0 over 100 episodes).
 
 ## Architectures
 
@@ -20,12 +20,11 @@ epsilon_decay=0.995
 min_epsilon=0.01
 ```
 
-were selected s.t. epsilon decays by 0.222 per episode (0.99995 ^ 300). This means epsilon reaches the minimum value of 0.01 after 195 episodes, approx the training time, and begins to make mostly deterministic decisions.
+were selected.
 
 The following parameters were set by using common values found online, where `fc_layers` specifies two hidden layers with size 64 each as default. This configuration was chosen as a reasonable balance of capturing non-linearity and keeping the network from being overly complex. The dueling network has 
 
 ```
-buffer_size=8192
 batch_size=64
 gamma=0.99
 tau=1e-3
