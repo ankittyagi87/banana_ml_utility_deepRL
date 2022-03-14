@@ -37,7 +37,7 @@ dueling unit=256
 
 ## Results
 
-The uniform and prioritised experience replay Deep Q agents were each trained once using the default parameters until they reached an average score of 13.0 across 100 episodes. The training progresses of each are shown below.
+The uniform and prioritised experience replay Deep Q agents were each trained once using the default parameters. The network was trained for a total of 800 episodes. The scores of each agent choosen are shown below.
 
 ![](results/Scores_of_different_agents.png)
 
