@@ -11,6 +11,9 @@ A Dueling Network is a type of Q-Network that has two streams to separately esti
 
 A [prioritised experience replay](https://arxiv.org/pdf/1511.05952.pdf) with adaptive priority strength was also implemented in order for the agent to learn from its larger mistakes more often, potentially converging faster than uniformly sampling experiences.
 
+## Activation function
+
+The activation function used was Relu annd linear for the last layer.
 ## Hyperparameters
 
 The `epsilon_decay` controls the rate at which epsilon (the chance of randomly selecting an action) decays with respect to the number of frames seen. The `min_epsilon` parameter is the minimum value that epsilon can take. The default values
@@ -37,7 +40,7 @@ dueling unit=256
 
 ## Results
 
-The uniform and prioritised experience replay of different Deep Q agents were trained using the above hyperparameters. The network was trained for a total of 800 episodes. The scores of each agent choosen are shown below.
+The uniform and prioritised experience replay of different Deep Q agents were trained using the above hyperparameters. The network was trained for a total of 800 episodes. The environment was solved in 513 episodes. The scores of each agent choosen are shown below.
 
 ![](results/Scores_of_different_agents.png)
 
